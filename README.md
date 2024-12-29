@@ -79,7 +79,7 @@ kubectl apply -f k8s/manifests/applications
 Use port forwarding to expose the API Gateway locally:
 
 ```bash
-kubectl port-forward svc/gateway-service 9000:9000
+kubectl port-forward svc/api-gateway 9000:9000
 ```
 
 ### Access the Keycloak Admin Console
@@ -96,4 +96,35 @@ Use port forwarding to expose the Grafana dashboard locally:
 
 ```bash
 kubectl port-forward svc/grafana 3000:3000
+```
+
+### Access the mysql workbench
+
+Use port forwarding to expose the mysql dashboard locally:
+
+```bash
+kubectl port-forward svc/mysql 3307:3306
+```
+### Access the MongoDb Compass
+
+Use port forwarding to expose the mongodb dashboard locally:
+
+```bash
+kubectl port-forward svc/mongodb 27017:27017  
+```
+
+### Access the Kafka Broker
+
+Use port forwarding to expose the kafka broker locally:
+
+```bash
+kubectl port-forward svc/broker 29092:29092 
+```
+
+### Access the Kafka UI
+
+Use port forwarding to expose the kafka-ui dashboard locally:
+
+```bash
+kubectl port-forward svc/kafka-ui 8082:8080  
 ```
