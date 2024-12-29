@@ -8,7 +8,7 @@ deploy microservices with Spring Boot.
 - Product Service
 - Order Service
 - Inventory Service
-- Notification Service
+- Notification Service with mailtrap
 - API Gateway (Spring Cloud Gateway MVC)
 
 ## Tech Stack
